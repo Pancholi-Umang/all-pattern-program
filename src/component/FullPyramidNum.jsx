@@ -1,20 +1,22 @@
 //      1
-//     222
-//    33333
-//   4444444
-//  555555555
-// 66666666666
+//     232
+//    34543
+//   4567654
 
 const FullPyramidNum = (number) => {
     let x = [];
     for(let i = 1; i <= number; i++) {
-        let rowdata = "";
-    for(let j = 1; j <= number - i; j++) {
+    let rowdata = "";
+    for(let j = i; j < number; j++) {
         rowdata = rowdata + "-" ;
     }
-    for(let k = 0; k < 2 * i - 1; k++){
-        rowdata = rowdata + i;
+    for (let k = i; k <= i*2-1; k++) {
+        rowdata = rowdata + k;
     }
+    for (let l = i*2-2; l > i-1; l--) {
+        rowdata = rowdata + l;
+    }
+    
     x.push(rowdata);
   }
   return x;

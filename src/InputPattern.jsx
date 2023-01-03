@@ -39,7 +39,7 @@ const InputPattern = () => {
   return (
     <div>
       <input type="number" onChange={checkNumber} />
-      {Black13(input).map((el,index) => (
+      {FullPyramidNum(input).map((el,index) => (
         <div key={index}>{el}</div>
       ))}
     </div>

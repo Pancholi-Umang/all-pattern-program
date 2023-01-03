@@ -15,14 +15,14 @@ function NewLineNumPyramid(number) {
       }
       x.push(rowdata);
    }
-   for (let i = number; i >= 1; i--) {
-      let rowdata = "";
-      for (let j = 1; j <= i; j++) {
-         rowdata = rowdata + newLineNum;
-         --newLineNum;
-      }
-      x.push(rowdata);
-   }
+   // for (let i = number; i >= 1; i--) {
+   //    let rowdata = "";
+   //    for (let j = 1; j <= i; j++) {
+   //       rowdata = rowdata + newLineNum;
+   //       --newLineNum;
+   //    }
+   //    x.push(rowdata);
+   // }
    return x;
 }
 
